@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>El pulpo: el genio del océano</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.65;
+      color: #e8f4ff;
+      background: linear-gradient(180deg, #06223d 0%, #04101f 100%);
+      min-height: 100vh;
+    }
+
+    /* ENCABEZADO */
+    header {
+      text-align: center;
+      padding: 40px 16px 28px;
+      background: rgba(0, 0, 0, .25);
+      border-bottom: 3px solid #ff6f91;
+    }
+    header h1 { font-size: 2.3rem; color: #ff9eb5; margin-bottom: 6px; }
+    header p  { color: #9fd3ff; font-size: 1.05rem; }
+
+    main { max-width: 900px; margin: 28px auto; padding: 0 16px; }
+
+    /* FOTO */
+    .foto { text-align: center; margin-bottom: 28px; }
+    .foto svg {
+      width: 100%;
+      max-width: 380px;
+      height: auto;
+      border-radius: 16px;
+      border: 3px solid #ff6f91;
+      background: #0b3a5e;
+    }
+    .foto figcaption { margin-top: 10px; font-size: .9rem; color: #9fd3ff; }
+
+    /* CONTENIDO */
+    .intro {
+      font-size: 1.1rem;
+      text-align: center;
+      margin-bottom: 28px;
+    }
+    h2 { color: #ff9eb5; margin-bottom: 14px; text-align: center; }
+
+    .datos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+    .tarjeta {
+      background: rgba(255, 255, 255, .07);
+      border: 1px solid rgba(159, 211, 255, .3);
+      border-radius: 12px;
+      padding: 18px;
+    }
+    .tarjeta .num { font-size: 2.2rem; font-weight: bold; color: #ff6f91; }
+    .tarjeta h3 { color: #9fd3ff; margin-bottom: 6px; }
+
+    .lista {
+      background: rgba(255, 255, 255, .07);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-bottom: 32px;
+    }
+    .lista ul { margin-left: 22px; }
+    .lista li { margin-bottom: 8px; }
+
+    /* PIE DE PÁGINA */
+    footer {
+      text-align: center;
+      padding: 20px 16px;
+      background: rgba(0, 0, 0, .35);
+      border-top: 3px solid #ff6f91;
+      color: #9fd3ff;
+      font-size: .9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ENCABEZADO -->
+  <header>
+    <h1>El pulpo: el genio del océano</h1>
+    <p>Ocho brazos, tres corazones y un cerebro sorprendente</p>
+  </header>
+
+  <main>
+
+    <!-- FOTO -->
+    <figure class="foto">
+      <!-- Si quieres una foto real: guárdala junto a este archivo (por ejemplo pulpo.jpg),
+           borra el bloque <svg> y escribe <img src="pulpo.jpg" alt="Un pulpo"> -->
+      <svg viewBox="0 0 400 400" role="img" aria-label="Ilustración de un pulpo rosado en el fondo del mar">
+        <rect width="400" height="400" fill="#0b3a5e"/>
+        <circle cx="60" cy="70" r="6" fill="#9fd3ff" opacity=".4"/>
+        <circle cx="330" cy="110" r="9" fill="#9fd3ff" opacity=".3"/>
+        <circle cx="300" cy="50" r="5" fill="#9fd3ff" opacity=".4"/>
+        <circle cx="90" cy="150" r="4" fill="#9fd3ff" opacity=".4"/>
+        <g fill="none" stroke="#ff6f91" stroke-width="18" stroke-linecap="round">
+          <path d="M140 230 C100 270 70 300 90 350"/>
+          <path d="M160 245 C140 290 130 320 150 360"/>
+          <path d="M185 250 C180 300 190 330 215 365"/>
+          <path d="M215 250 C225 300 225 330 250 360"/>
+          <path d="M240 245 C270 290 290 320 275 355"/>
+          <path d="M260 230 C300 260 330 280 325 335"/>
+          <path d="M130 215 C80 220 50 245 45 280"/>
+          <path d="M270 215 C320 215 350 235 358 270"/>
+        </g>
+        <ellipse cx="200" cy="170" rx="85" ry="95" fill="#ff6f91"/>
+        <ellipse cx="200" cy="120" rx="60" ry="35" fill="#ff9eb5" opacity=".5"/>
+        <circle cx="168" cy="180" r="20" fill="#fff"/>
+        <circle cx="232" cy="180" r="20" fill="#fff"/>
+        <circle cx="172" cy="183" r="10" fill="#06223d"/>
+        <circle cx="228" cy="183" r="10" fill="#06223d"/>
+        <path d="M180 225 Q200 240 220 225" fill="none" stroke="#06223d" stroke-width="5" stroke-linecap="round"/>
+      </svg>
+      <figcaption>Ilustración de un pulpo</figcaption>
+    </figure>
+
+    <!-- CONTENIDO -->
+    <p class="intro">
+      El pulpo es uno de los animales más inteligentes y extraños del planeta.
+      No tiene huesos, cambia de color en un instante y puede escaparse por un hueco del tamaño de su ojo.
+      ¡Conoce por qué es tan especial!
+    </p>
+
+    <h2>Datos asombrosos</h2>
+    <section class="datos">
+      <article class="tarjeta">
+        <div class="num">3</div>
+        <h3>Corazones</h3>
+        <p>Dos bombean sangre a las branquias y uno al resto del cuerpo.</p>
+      </article>
+      <article class="tarjeta">
+        <div class="num">8</div>
+        <h3>Brazos inteligentes</h3>
+        <p>Cada brazo tiene muchas neuronas y puede reaccionar casi por sí solo.</p>
+      </article>
+      <article class="tarjeta">
+        <div class="num">Azul</div>
+        <h3>Sangre</h3>
+        <p>Su sangre es azul porque usa cobre (hemocianina) para transportar el oxígeno.</p>
+      </article>
+    </section>
+
+    <h2>Sus superpoderes</h2>
+    <section class="lista">
+      <ul>
+        <li><strong>Camuflaje:</strong> cambia de color y de textura para parecerse a rocas, algas o arena.</li>
+        <li><strong>Tinta:</strong> lanza una nube oscura para confundir a los depredadores y escapar.</li>
+        <li><strong>Cuerpo flexible:</strong> sin huesos, se mete por grietas muy pequeñas.</li>
+        <li><strong>Inteligencia:</strong> resuelve laberintos, abre frascos y usa herramientas.</li>
+        <li><strong>Vida corta:</strong> la mayoría vive solo entre uno y cinco años.</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <p>Actividad práctica de HTML – Página sobre el pulpo</p>
+    <p>&copy; 2026</p>
+  </footer>
+
+</body>
+</html>
