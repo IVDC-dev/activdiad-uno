@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Parásitos (2019) | Cine</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ENCABEZADO -->
+  <header>
+    <button id="btn-modo" type="button">Modo claro</button>
+    <h1>Parásitos</h1>
+    <p>La película surcoreana que hizo historia en el cine</p>
+  </header>
+
+  <main>
+
+    <!-- FOTO -->
+    <figure class="foto">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.39s5n5oSjvHv8VUeWFp61QHaJ4?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+           alt="Imagen de la película Parásitos">
+      <figcaption>Imagen de la película Parásitos (2019)</figcaption>
+    </figure>
+
+    <!-- CONTENIDO -->
+    <p class="intro">
+      <strong>Parásitos</strong> (en coreano, <em>Gisaengchung</em>) es una película que mezcla
+      comedia, suspenso y drama para contar la historia de dos familias de clases sociales muy distintas
+      cuyas vidas se cruzan.
+    </p>
+    <p class="ayuda">Tip: usa las teclas + y - para cambiar el tamaño de la letra.</p>
+
+    <h2>Ficha técnica</h2>
+    <table class="ficha">
+      <tr><th>Título original</th><td>Gisaengchung</td></tr>
+      <tr><th>Año</th><td>2019</td></tr>
+      <tr><th>Director</th><td>Bong Joon-ho</td></tr>
+      <tr><th>País</th><td>Corea del Sur</td></tr>
+      <tr><th>Género</th><td>Suspenso, drama y comedia negra</td></tr>
+      <tr><th>Actores principales</th><td>Song Kang-ho, Choi Woo-shik, Park So-dam, Lee Sun-kyun, Cho Yeo-jeong</td></tr>
+    </table>
+
+    <h2>Premios destacados</h2>
+    <section class="premios">
+      <article class="tarjeta" data-extra="Fue la primera vez que ganaba una película surcoreana.">
+        <h3>Palma de Oro</h3>
+        <p>Festival de Cannes 2019</p>
+        <p class="extra"></p>
+      </article>
+      <article class="tarjeta" data-extra="Primera película en un idioma distinto al inglés en ganarlo.">
+        <h3>Mejor película</h3>
+        <p>Premios Óscar 2020</p>
+        <p class="extra"></p>
+      </article>
+      <article class="tarjeta" data-extra="También ganó Mejor guion original y Mejor película internacional.">
+        <h3>Mejor director</h3>
+        <p>Bong Joon-ho, Premios Óscar 2020</p>
+        <p class="extra"></p>
+      </article>
+    </section>
+
+    <h2>¿Por qué es tan especial?</h2>
+    <section class="lista">
+      <ul>
+        <li><strong>Crítica social:</strong> muestra la desigualdad entre ricos y pobres.</li>
+        <li><strong>Cambios de género:</strong> pasa de la comedia al suspenso y al drama sin avisar.</li>
+        <li><strong>Los espacios:</strong> la casa, las escaleras y el sótano sirven para mostrar las clases sociales.</li>
+        <li><strong>Reconocimiento mundial:</strong> abrió las puertas del cine internacional a historias en otros idiomas.</li>
+      </ul>
+    </section>
+
+    <!-- RESEÑA EN YOUTUBE -->
+    <h2>Mira una reseña</h2>
+    <section class="resena">
+      <p>¿Quieres entender mejor la película? Mira este análisis sobre las clases sociales en Parásitos.</p>
+      <a class="boton" href="https://www.youtube.com/watch?v=ynDfZxcopVw" target="_blank" rel="noopener">
+        Ver reseña en YouTube
+      </a>
+    </section>
+
+    <!-- FORMULARIO DE CALIFICACIÓN -->
+    <h2>Califica la película</h2>
+    <form id="form-calificacion" class="formulario">
+      <label for="estrellas">Tu calificación</label>
+      <select id="estrellas">
+        <option value="">Elige una opción</option>
+        <option value="5">5 – Obra maestra</option>
+        <option value="4">4 – Muy buena</option>
+        <option value="3">3 – Buena</option>
+        <option value="2">2 – Regular</option>
+        <option value="1">1 – No me gustó</option>
+      </select>
+
+      <label for="comentario">Tu comentario</label>
+      <textarea id="comentario" rows="4" placeholder="¿Qué te pareció?"></textarea>
+
+      <button type="submit">Enviar calificación</button>
+      <p id="mensaje-form"></p>
+    </form>
+
+  </main>
+
+  <button id="btn-arriba" type="button">&uarr; Volver arriba</button>
+  <div id="aviso-letra"></div>
+
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <p>Actividad práctica de HTML, CSS y JavaScript – Página sobre cine</p>
+    <p>&copy; 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
